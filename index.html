@@ -1,53 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Calculator</title>
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" 
-      rel="stylesheet">
 
-      <link rel="stylesheet" href="assets/css/style.css">
-      <!-- Font Awesome -->
-      <script src="https://kit.fontawesome.com/8087219881.js" crossorigin=""></script>
-</head>     
-      
-<body>                                        
-    <div class="container">
-      <div class="calculator"></div>
-        <div class="brand"></div>
-        <div class="screen">
-          <div id="type">5+6</div>
-          <div id="result">00</div>
-        </div>
-        <div class="numpad">
-          <button id="erase">E</button>
-          <button id="clear">c</button>
-          <button id="se">7</button>
-          <button id="se">8</button>
-          <button id="ni">9</button>
-          <button id="fo">4</button>
-          <button id="fi">5</button>
-          <button id="si">6</button>
-          <button id="on">1</button>
-          <button id="tw">2</button>
-          <button id="th">3</button>
-          <button id="ze">0</button>
-          <button id="db_ze">00</button>
-          <button id="plus"><i class="fa fa-plus"></i></button>
-          <button id="min"><i class="fa fa-minus"></i></button>
-          <button id="multi"><i class="fa fa-times"></i></button>
-          <button id="div"><i class="fa fa-divide"></i></button>
-          <button id="per"><i class="fa fa-percent"></i></button>
-          <button id="point"><i class="fa fa-circle" style="font-size:7px"></i></button>
-        </div>
-      </div>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Flat Calculator - Basic</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="formContainer">
+        <form name="calculator">
+          <h1 id="title">calculator</h1> 
+          <p id="description">simple calculator created by using html, css, javacript</h4>
+
+
+            <input id="result" autocomplete="off" type="text" value="">
+
+            <input class="inputs" type="button" value="(">
+            <input class="inputs" type="button" value=")">
+            <input id="backspace" type="button" value="&lArr;">
+            <input id="clear" type="button" value="c">
+
+            <input class="inputs" type="button" value="7">
+            <input class="inputs" type="button" value="8">
+            <input class="inputs" type="button" value="9">
+            <input class="operators" type="button" value="/">
+
+            <input class="inputs" type="button" value="4">
+            <input class="inputs" type="button" value="5">
+            <input class="inputs" type="button" value="6">
+            <input class="operators" type="button" value="*">
+
+            <input class="inputs" type="button" value="1">
+            <input class="inputs" type="button" value="2">
+            <input class="inputs" type="button" value="3">
+            <input class="operators" type="button" value="-">
+
+            <input class="inputs" type="button" value=".">
+            <input class="inputs" type="button" value="0">
+            <input id="equal" type="button" value="=">
+            <input class="operators" type="button" value="+">
+
+        </form>
     </div>
-    <script src="script.js"></script>
-    <link href="style.css" rel="stylesheet">
+
     <script src="https://app.zenclass.in/sheets/v1/js/zen/suite/bundle.js"></script>
+
+    <script src="script.js"></script>
 </body>
+
 </html>
